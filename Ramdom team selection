@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+ 
+  function RamdomEpl(){
+    const teamArray = ['맨체스터 유나이티드', '맨체스터시티', '아스날', '리버풀', '울버햄튼', '첼시', '뉴캐슬', '웨스트햄', '아스톤빌라', '토트넘', '레스터시티', '사우샘프턴',
+  '리즈유나이티드', '크리스탈 팰리스', '브라이튼', '브렌트포드', '에버튼', '셰필드', '번리', '왓포드', '노리치'];
+
+     const selected = teamArray[Math.floor(Math.random() * teamArray.length)]
+     document.write(selected);
+  }
+  
+  function RamdomLaliga(){
+    const teamArray = ['레알마드리드', '바르셀로나', '세비야', 'AT마드리드', '레반테', '발렌시아', '비야레알', '마요르카', '레알베티스', '레알소시에다드', '아틀레틱', '오사수나',
+  '셀타비고', '에스파뇰', '바예카노', '헤타페', '엘체', '그라나다', '카디스', '알라베스'];
+
+     const selected = teamArray[Math.floor(Math.random() * teamArray.length)]
+     document.write(selected);
+  }
+  function RamdomBundes(){
+    const teamArray = ['바이에른뮌헨', '도르트문트', '레버쿠젠', '라이프치히', '프라이부르크', '볼프스부르크', '호펜하임', '우니온베를린', '쾰른', '아우크스부르크', '슈투트가르트', 
+    '빌레펠트', '헤르타', '퓌르트'];
+
+     const selected = teamArray[Math.floor(Math.random() * teamArray.length)]
+     document.write(selected);
+  }
+  
+  </script>
+
+  <input type="button" value="어떤 EPL 팀이 나올까?" onclick ="RamdomEpl()" /> 
+  <input type="button" value="어떤 La Liga 팀이 나올까?" onclick ="RamdomLaliga()" />
+  <input type="button" value="어떤 분데스리그 팀이 나올까?" onclick ="RamdomBundes()" />
+
+
+</body>
+</html>
